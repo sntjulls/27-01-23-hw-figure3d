@@ -84,7 +84,7 @@ class Cylinder extends Figure3D {
     this.radius = radius;
   }
   get height() {
-    return this._side;
+    return this._height;
   }
   set height(value) {
     if (typeof value !== "number") {
@@ -96,7 +96,7 @@ class Cylinder extends Figure3D {
     this._height = value;
   }
   get radius() {
-    return this._side;
+    return this._height;
   }
   set radius(value) {
     if (typeof value !== "number") {
@@ -124,9 +124,6 @@ try {
   const figure1 = new Sphere(10);
   const figure2 = new Cube(5);
   const figure3 = new Cylinder(14, 9);
-  console.log(figure1.getVolume());
-  console.log(figure2.getVolume());
-  console.log(figure3.getVolume());
   showVolume3DFigure(figure1);
   showVolume3DFigure(figure2);
   showVolume3DFigure(figure3);
